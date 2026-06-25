@@ -44,5 +44,66 @@
 			{\LARGE Cusco -- 2026}	    
 		\end{center}
 	\end{titlepage}
+	\section*{Ejercicio 1: Cálculo del Valor Presente de una Anualidad Anticipada}
+	
+	\textbf{Enunciado:} \\
+	Una empresa consigue un financiamiento que será liquidado mediante 10 pagos mensuales anticipados (al inicio de cada mes) de 1,200 soles cada uno, a una tasa de interés efectiva del 2\% mensual. Determine el valor original del financiamiento (Valor Presente $A$).
+	
+	\subsection*{Datos}
+	Tenemos:
+	\begin{itemize}
+		\item $R = 1200$ 
+		\item $i = 0.02$ (Tasa de interés efectiva mensual)
+		\item $n = 10$ 
+	\end{itemize}
+	
+	\subsection*{Planteamiento }
+	Utilizamos la fórmula del valor presente de una anualidad de pago anticipado ($A = \ddot{a}_n$ cuando $R=1$):
+	$$A = R \left[ \frac{1 - (1 + i)^{-n}}{i} \right] (1 + i)$$
+	
+	\subsection*{cálculo }
+	Sustituimos los valores correspondientes en la fórmula general:
+	$$A = 1200 \left[ \frac{1 - (1 + 0.02)^{-10}}{0.02} \right] (1 + 0.02)$$
+	
+	$$\frac{1 - (1.02)^{-10}}{0.02} = \frac{1 - 0.820348}{0.02} = \frac{0.179652}{0.02} \approx 8.982585$$
+	
+	$$8.982585 \times 1.02 \approx 9.162237$$
+	
+	$$A = 1200 \times 9.162237 = 10,994.68 \text{ soles}$$
+	
+	\subsection*{Interpretación}
+	El valor presente del financiamiento recibido por la empresa el día de hoy es \textbf{10,994.68 soles}.
+	
+	\newpage
+	
+	\section*{Ejercicio 2: Cálculo del Valor Futuro de una Anualidad Anticipada}
+	
+	\textbf{Enunciado:} \\
+	Una persona decide realizar un depósito de 2,800 soles al inicio de cada año en una cuenta de ahorros que rinde una Tasa Efectiva Anual (TEA) del 1\%. Si mantiene esta disciplina durante 15 años, ¿cuál será el monto final acumulado resultante de su inversión (Valor Futuro $S$)?
+	
+	\subsection*{Datos}
+	Tenemos:
+	\begin{itemize}
+		\item $R = 2800$ 
+		\item $i = 0.01$ (Tasa de interés efectiva anual)
+		\item $n = 15$ 
+	\end{itemize}
+	
+	\subsection*{Planteamiento}
+	El valor futuro para rentas anticipadas es:
+	$$S = R (1 + i) \left[ \frac{(1 + i)^n - 1}{i} \right]$$
+	
+	\subsection*{cálculo }
+	Sustituimos los datos :
+	$$S = 2800 (1 + 0.01) \left[ \frac{(1 + 0.01)^{15} - 1}{0.01} \right]$$
+	
+	$$\frac{(1.01)^{15} - 1}{0.01} = \frac{1.160969 - 1}{0.01} = \frac{0.160969}{0.01} \approx 16.096896$$
+	
+	$$16.096896 \times 1.01 \approx 16.257865$$
+	
+	$$S = 2800 \times 16.257865 = 45,522.02 \text{ soles}$$
+	
+	\subsection*{Interpretación}
+	Al finalizar el plazo de 15 años se logrará acumular un fondo de \textbf{45,522.02 soles}
 	
 \end{document}
