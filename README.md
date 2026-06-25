@@ -1,6 +1,8 @@
 # Tarea: Ejercicios de Anualidades
 **Curso:** Estadística Actuarial  
-**Institución:** Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)  
+**Institución:** Universidad Nacional de San Antonio Abad del Cusco 
+**Alumno:** Walter Hugo Vera Malaga 
+
 
 ---
 
