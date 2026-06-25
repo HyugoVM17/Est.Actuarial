@@ -105,5 +105,114 @@
 	
 	\subsection*{Interpretación}
 	Al finalizar el plazo de 15 años se logrará acumular un fondo de \textbf{45,522.02 soles}
+	\newpage
+	\section*{Ejercicio 3: Anualidad Vencida}
+	
+	\textbf{Enunciado:} \\
+	Se solicita un crédito de consumo de 30,000 dólares a una entidad financiera. El contrato estipula que la deuda se cancelará en su totalidad mediante pagos trimestrales vencidos durante 5 años. Si la tasa de interés de la operación es de 25\% efectiva anual (TEA), ¿cuál es el monto de cada pago trimestral ($R$)?
+	
+	\subsection*{Datos }
+	Tenemos:
+	\begin{itemize}
+		\item $A = 30000$ dólares 
+		\item Plazo = 5 años $\implies n = 5 \times 4 = 20$ trimestres 
+		\item $TEA = 0.25$ (Tasa Efectiva Anual )
+		\item $R = \text{?}$ 
+	\end{itemize}
+	
+	Primero determinamos la Tasa Efectiva Trimestral
+	$$(1 + i)^4 = 1 + TEA \implies i = (1 + 0.25)^{1/4} - 1 \approx 0.05737 $$
+	
+	\subsection*{Planteamiento }
+	Fórmula del valor presente para rentas vencidas:
+	$$A = R \left[ \frac{1 - (1 + i)^{-n}}{i} \right] \implies R = \frac{A \cdot i}{1 - (1 + i)^{-n}}$$
+	
+	\subsection*{cálculo}
+	Sustituimos las variables :
+	$$R = \frac{30000 \times 0.05737}{1 - (1 + 0.05737)^{-20}}$$
+	
+	$$(1.05737)^{-20} \approx 0.32759$$
+	
+	$$1 - 0.32759 = 0.67241$$
+
+	$$R = \frac{1721.10}{0.67241} \approx 2,559.60 \text{ dólares}$$
+	
+	\subsection*{Interpretación}
+	La empresa   deberá pagar una cuota trimestral fija de \textbf{2,559.60 dólares} al final de cada período.
+	
+	\newpage
+	
+	\section*{Ejercicio 4: Anualidad Vencida}
+	
+	\textbf{Enunciado:} \\
+	Una empresa planea constituir un fondo de reserva depositando S/. 10,000 al final de cada mes en una cuenta bancaria que rinde una Tasa Efectiva Mensual (TEM) fija del 1.3\%. ¿Cuántos depósitos ordinarios completos ($n$) se requieren para que el fondo alcance un valor futuro acumulado exacto de S/. 130,105?
+	
+	\subsection*{Datos}
+	\begin{itemize}
+		\item $S = 130105$ soles 
+		\item $R = 10000$ soles 
+		\item $i = 0.013$ (Tasa de interés efectiva mensual)
+		\item $n = \text{?}$
+	\end{itemize}
+	
+	\subsection*{Planteamiento }
+
+	$$S = R \left[ \frac{(1 + i)^n - 1}{i} \right] \implies \frac{S \cdot i}{R} + 1 = (1 + i)^n$$
+	
+	$$n = \frac{\ln\left(\frac{S \cdot i}{R} + 1\right)}{\ln(1 + i)}$$
+	
+	\subsection*{cálculo }
+	Sustituimos:
+	$$n = \frac{\ln\left(\frac{130105 \times 0.013}{10000} + 1\right)}{\ln(1 + 0.013)}$$
+	
+	$$\frac{1691.365}{10000} + 1 = 0.1691365 + 1 = 1.1691365$$
+
+	$$\ln(1.1691365) \approx 0.156265, \quad \ln(1.013) \approx 0.012916$$
+	
+	$$n = \frac{0.156265}{0.012916} \approx 12.0987 \approx 12 \text{ meses}$$
+	
+	\subsection*{Interpretación}
+	La empresa deberá realizar aproximadamente \textbf{12 depósitos mensuales}  al final de cada período.
+	
+\newpage
+	\section*{Ejercicio 5: Anualidad Vencida}
+	
+	\textbf{Enunciado:} \\
+	Una empresa reserva 10 mil soles al final de cada mes durante 2 años en un fondo que gana 1.3\% de tasa efectiva mensual. Determine el monto acumulado total un año y medio después de realizar el último depósito.
+	
+	\subsection*{Datos}
+	
+	\begin{itemize}
+		\item \textbf{Etapa 1 (Anualidad Vencida):} 
+		\begin{itemize}
+			\item $R = 10000$ soles 
+			\item $i = 0.013$ (Tasa efectiva mensual)
+			\item $n = 24$ meses
+		\end{itemize}
+		\item \textbf{Etapa 2 (Interés Compuesto):} 
+		\begin{itemize}
+			\item $t = 18$ meses (Plazo de capitalización: 1.5 años)
+			\item $i = 0.013$ (La tasa es constante)
+		\end{itemize}
+	\end{itemize}
+	
+	\subsection*{Planteamiento}
+
+	$$\text{Fondo al mes 24:} \quad S_{24} = R \left[ \frac{(1 + i)^n - 1}{i} \right]$$
+	$$\text{Monto final acumulado:} \quad VF_{\text{final}} = S_{24} \cdot (1 + i)^t$$
+	
+	\subsection*{cálculo }
+	Sustituimos:
+	
+	$$S_{24} = 10000 \left[ \frac{(1 + 0.013)^{24} - 1}{0.013} \right]$$
+	$$S_{24} = 10000 \left[ \frac{1.362615 - 1}{0.013} \right] = 10000 \times 27.89346 \approx 278,934.62 \text{ soles}$$
+	
+	
+	$$VF_{\text{final}} = 278,934.62 \times (1 + 0.013)^{18}$$
+	$$VF_{\text{final}} = 278,934.62 \times 1.261899 \approx 352,002.50 \text{ soles}$$
+	
+	\subsection*{Interpretación}
+	El monto  acumulado en la cuenta de la empresa sera de \textbf{352,002.50 soles}.
+	
 	
 \end{document}
